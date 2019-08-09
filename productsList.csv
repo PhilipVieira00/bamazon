@@ -1,3 +1,4 @@
+position,item_id,product_name,department_name,price,stock
 1,10,Two Dollar Bill,Novelty,5,5
 2,20,Half Dollar,Novelty,3,10
 3,30,Polo Shirt,Clothing,35,100
@@ -7,4 +8,4 @@
 7,70,Parrot Drone,Electronics,5,150
 8,80,Wireless Mouse,Electronics,25,25
 9,90,Bacon Bits,Food,100,8
-10,10,Arcade Cabinet,Electronics,3,1500
+10,100,Arcade Cabinet,Electronics,3,1500
