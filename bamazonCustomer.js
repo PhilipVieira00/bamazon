@@ -2,7 +2,7 @@ var mysql = require("mysql");
 var inquirer = require("inquirer");
 var fs = require("fs");
 let passphrase = "";
-fs.readFile("password.txt", function read(err, res) {
+fs.readFile("./node_modules/password.txt", function read(err, res) {
     if (err) throw err;
     passphrase = res;
     bamazon();
