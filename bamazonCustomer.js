@@ -1,18 +1,13 @@
 var mysql = require("mysql");
 var inquirer = require("inquirer");
-var fs = require("fs");
-let passphrase = "";
-fs.readFile("./node_modules/password.txt", function read(err, res) {
-    if (err) throw err;
-    passphrase = res;
-    bamazon();
-});
-function bamazon() {
+require("dotenv").config();
+
+
 var connection = mysql.createConnection({
     host: "localhost",
     port: 3306,// Your port; if not 3306
     user: "root",  // Your username
-    password: passphrase,  // Your password
+    password: process.env.PASSCODE,  // Your password
     database: "bamazon_db"
    });
    connection.connect(function (err) {
@@ -57,4 +52,4 @@ var connection = mysql.createConnection({
             })
     })
 })
-}
+
